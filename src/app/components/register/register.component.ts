@@ -22,8 +22,7 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('Register uploaded');
-    console.log(this._userService.test());
+
   }
 
   onSubmit(form:any){
