@@ -4,11 +4,14 @@ import { FormsModule } from '@angular/forms'; //import para trabajar formularios
 import { HttpClientModule} from '@angular/common/http'; //Peticion ajax al back
 import { routing, appRoutingProviders} from './app.routing';
 
+import { AngularFileUploaderModule } from "angular-file-uploader";
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
+import { UserEditComponent } from './components/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,15 @@ import { ErrorComponent } from './components/error/error.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
     routing,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFileUploaderModule,
   ],
   providers: [
     appRoutingProviders
