@@ -3,7 +3,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Category} from '../models/category';
 import {global} from './global';
-import { analyzeAndValidateNgModules } from '@angular/compiler';
+
 
 @Injectable()
 export class CategoryService{
