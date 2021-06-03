@@ -28,8 +28,8 @@ export class PostNewComponent implements OnInit {
 
   public afuConfig = {
     multiple: false,
-    formatsAllowed: ".jpg,.png, .gif. jpeg",
-    maxSize: "50",
+    formatsAllowed: ".jpg,.png, .gif, .jpeg",
+    maxSize: "500",
     uploadAPI:  {
       url: global.url+'post/upload',
       method:"POST",
