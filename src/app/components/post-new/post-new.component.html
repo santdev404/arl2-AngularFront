@@ -2,8 +2,12 @@
     <h1>{{page_title}}</h1>
     <hr/>
 
-    <p>
+    <p *ngIf="!is_edit">
         Añade un nuevo articulo al post
+    </p>
+
+    <p *ngIf="is_edit">
+        Edita el articulo del post
     </p>
     <hr/>
 
